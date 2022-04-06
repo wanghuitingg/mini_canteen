@@ -1,0 +1,1 @@
+"C:\Program Files\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-3g8ktzem111ecee4 --n quickstartFunctions --r --project "C:\Users\86137\WeChatProjects\my_canteen" --report_first --report

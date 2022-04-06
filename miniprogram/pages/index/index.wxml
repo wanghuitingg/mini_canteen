@@ -1,0 +1,28 @@
+<!-- index 主页面 -->
+<!--pages/index/index.wxml-->
+<!-- 顶部轮播图 -->
+<view class="banner">
+  <swiper class="swip_main"	indicator-dots="true" autoplay interval="6000" circular>
+    <block wx:for="{{mgList}}">
+      <swiper-item>
+        <image src="{{item.photo}}" style="width: 100%;height: 100%;" mode="scaleToFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 通知栏 -->
+<view class="notice">
+  <view class="notice_left">
+    <image src="../../images/font-ui/notice.png"></image>
+  </view>
+  <swiper class="notice_right" vertical="false" autoplay interval="3000" circular>
+    <block wx:for="{{noticeList}}">
+    <navigator url="" open-type="navigate">
+      <swiper-item>
+        <view class="swiper_item">{{item.notice}}</view>
+      </swiper-item>
+    </navigator>
+    </block>
+  </swiper>
+</view>
