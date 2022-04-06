@@ -1,36 +1,42 @@
 /* pages/index/index.wxss */
-.banner{
+.banner {
   width: 100%;
   height: 350rpx;
 }
-.swip_main{
+
+.swip_main {
   width: 100%;
   height: 100%;
 }
-.notice{
+
+.notice {
   width: 100%;
   height: 100rpx;
   background-color: #f5f2d7f8;
 }
-.notice_left{
+
+.notice_left {
   width: 60rpx;
   height: 60rpx;
   margin-top: 20rpx;
   margin-left: 20rpx;
   float: left;
 }
-.notice_left image{
+
+.notice_left image {
   width: 100%;
   height: 100%;
 }
-.notice_right{
+
+.notice_right {
   width: 600rpx;
   height: 60rpx;
   float: right;
   margin-top: 20rpx;
   margin-right: 20rpx;
 }
-.swiper_item{ 
+
+.swiper_item {
   font-size: 28rpx;
   font-weight: 600;
   line-height: 60rpx;
@@ -39,28 +45,129 @@
   white-space: nowrap;
   text-align: center;
 }
-.nav{
+
+.nav {
   width: 100%;
   height: 130rpx;
   /* background-color: green; */
 }
-.nav-banner{
+
+.nav-banner {
   width: 25%;
   height: 100%;
   background-color: rgba(215, 222, 245, 0.705);
   float: left;
 }
-.nav-banner-img{
+
+.nav-banner-img {
   width: 100%;
   height: 75%;
 }
-.nav-banner-img image{
+
+.nav-banner-img image {
   width: 50%;
   height: 80%;
   padding: 10% 25%;
 }
-.nav-banner-text{
+
+.nav-banner-text {
   text-align: center;
   margin-top: -5rpx;
   font-size: 24rpx;
+}
+
+.hotfoods {
+  width: 90%;
+  margin: 0 auto;
+  height: 800rpx;
+  margin-top: 30rpx;
+  /* background-color: rgb(235, 166, 166); */
+}
+
+.hotfoods-title {
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+}
+
+.hotfoods-title-text {
+  /* background-color: #000; */
+  width: 30%;
+  font-weight: 700;
+  float: left;
+  line-height: 80rpx;
+  text-align: center;
+  border-left: 7px #FFD900 solid;
+}
+
+.hotfoods-title-more {
+  font-size: 24rpx;
+  line-height: 80rpx;
+  float: right;
+  margin-right: 30rpx;
+  color: rgb(99, 102, 102);
+}
+
+.hotfoods-list {
+  width: 100%;
+  height: 250rpx;
+  margin-top: 10rpx;
+}
+
+.hotfoods-list-photo {
+  width: 40%;
+  height: 80%;
+  float: left;
+  margin-top: 25rpx;
+}
+
+.hotfoods-list-photo image {
+  width: 100%;
+  height: 100%;
+}
+
+.hotfoods-list-text {
+  float: right;
+  width: 55%;
+  height: 100%;
+}
+
+.hotfoods-list-text-name {
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-top: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 85%;
+}
+
+.hotfoods-list-text-desc {
+  width: 100%;
+  height: 60rpx;
+  font-size: 23rpx;
+  color: rgb(192, 192, 192);
+}
+
+.hotfoods-list-text-address {
+  font-size: 20rpx;
+  margin-top: 10rpx;
+  color: rgb(205, 133, 63);
+}
+
+.hotfoods-list-text-tag {
+  width: 80rpx;
+  height: 30rpx;
+  /* background-color: beige; */
+  font-size: 17rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  line-height: 30rpx;
+  float: left;
+  margin-right: 10rpx;
+  color: white;
+  background-color: rgba(245, 203, 66, 0.801);
+}
+
+.hotfoods-list-text-btn {
+  margin-top: 10rpx;
 }

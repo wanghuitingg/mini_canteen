@@ -12,7 +12,8 @@ Page({
    */
   data: {
     mgList:'',
-    noticeList:''
+    noticeList:'',
+    hotFoodsList:''
   },
   // 点击跳转‘美食优选’界面
   getFoodList:function(){
@@ -34,11 +35,17 @@ Page({
     }),
     db.collection("notice").get({
       success:(res)=>{
-        console.log(res);
+        // console.log(res);
         this.setData({
           noticeList:res.data
         })
       }
+    }),
+    db.collection("hotFoods").get().then((res)=>{
+      console.log(res);
+      this.setData({
+        hotFoodsList:res.data
+      })
     })
   },
 

@@ -54,3 +54,27 @@
     <view class="nav-banner-text">美食优选</view>
   </view>
 </view>
+
+<!-- 热门美食 -->
+<view class="hotfoods">
+  <view class="hotfoods-title">
+    <view class="hotfoods-title-text">热门美食</view>
+    <view class="hotfoods-title-more">查看更多></view>
+  </view>
+  <view class="hotfoods-list" wx:for="{{hotFoodsList}}" wx:key="_id" id="{{item._id}}" wx:if="{{index<10}}">
+    <view class="hotfoods-list-photo">
+      <image src="{{item.src}}"></image>
+    </view>
+    <view class="hotfoods-list-text">
+      <view class="hotfoods-list-text-name">{{item.name}}</view>
+      <view class="hotfoods-list-text-desc">{{item.description}}</view>
+      <view class="hotfoods-list-text-address">地址：{{item.address}}</view>
+      <view class="hotfoods-list-text-btn">
+        <view class="hotfoods-list-text-tag" style="background-color: rgba(62, 127, 224, 0.842);" wx:if="{{item.btn!=''}}">{{item.btn}}</view>
+        <view class="hotfoods-list-text-tag" style="background-color: rgba(6, 110, 6, 0.801);" wx:if="{{item.btn2!=''}}">{{item.btn2}}</view>
+        <view class="hotfoods-list-text-tag" style="background-color: darksalmon;" wx:if="{{item.btn3!=''}}">{{item.btn3}}</view>
+        <view class="hotfoods-list-text-tag" wx:if="{{item.btn4!=''}}">{{item.btn4}}</view>
+      </view>
+    </view>
+  </view>
+</view>
