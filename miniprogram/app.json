@@ -4,7 +4,8 @@
     "pages/shop/shop",
     "pages/order/order",
     "pages/method/method",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/foods/foods"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

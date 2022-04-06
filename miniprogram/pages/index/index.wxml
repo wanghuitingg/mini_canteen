@@ -2,7 +2,7 @@
 <!--pages/index/index.wxml-->
 <!-- 顶部轮播图 -->
 <view class="banner">
-  <swiper class="swip_main"	indicator-dots="true" autoplay interval="6000" circular>
+  <swiper class="swip_main" indicator-dots="true" autoplay interval="6000" circular>
     <block wx:for="{{mgList}}">
       <swiper-item>
         <image src="{{item.photo}}" style="width: 100%;height: 100%;" mode="scaleToFill"></image>
@@ -18,11 +18,39 @@
   </view>
   <swiper class="notice_right" vertical="false" autoplay interval="3000" circular>
     <block wx:for="{{noticeList}}">
-    <navigator url="" open-type="navigate">
-      <swiper-item>
-        <view class="swiper_item">{{item.notice}}</view>
-      </swiper-item>
-    </navigator>
+      <navigator url="" open-type="navigate">
+        <swiper-item>
+          <view class="swiper_item">{{item.notice}}</view>
+        </swiper-item>
+      </navigator>
     </block>
   </swiper>
+</view>
+
+<!-- 页中导航栏 -->
+<view class="nav">
+  <view class="nav-banner">
+    <view class="nav-banner-img">
+      <image src="../../images/font-ui/canteen1.png"></image>
+    </view>
+    <view class="nav-banner-text">一食堂</view>
+  </view>
+  <view class="nav-banner">
+    <view class="nav-banner-img">
+      <image src="../../images/font-ui/canteen2.png"></image>
+    </view>
+    <view class="nav-banner-text">二食堂</view>
+  </view>
+  <view class="nav-banner">
+    <view class="nav-banner-img">
+      <image src="../../images/font-ui/store.png"></image>
+    </view>
+    <view class="nav-banner-text">小卖部</view>
+  </view>
+  <view class="nav-banner" bindtap="getFoodList">
+    <view class="nav-banner-img">
+      <image src="../../images/font-ui/foods.png"></image>
+    </view>
+    <view class="nav-banner-text">美食优选</view>
+  </view>
 </view>

@@ -1,45 +1,18 @@
-// pages/index/index.js
-wx.cloud.init({
-  env:"cloud1-3g8ktzem111ecee4",
-  traceUser:"true",
-})
-const db = wx.cloud.database();
-
+// pages/foods/foods.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    mgList:'',
-    noticeList:''
+
   },
-  // 点击跳转‘美食优选’界面
-  getFoodList:function(){
-    wx.navigateTo({
-      url: '../foods/foods',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    db.collection("banner_swiper").get({
-      success:(res)=>{
-        // console.log(res);
-        this.setData({
-          mgList:res.data
-        })
-      }
-    }),
-    db.collection("notice").get({
-      success:(res)=>{
-        console.log(res);
-        this.setData({
-          noticeList:res.data
-        })
-      }
-    })
+
   },
 
   /**
