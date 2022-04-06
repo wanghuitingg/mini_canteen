@@ -30,7 +30,7 @@
   margin-top: 20rpx;
   margin-right: 20rpx;
 }
-.swiper_item{
+.swiper_item{ 
   font-size: 28rpx;
   font-weight: 600;
   line-height: 60rpx;
