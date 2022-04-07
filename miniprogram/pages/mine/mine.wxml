@@ -1,2 +1,58 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="topbanner" wx:if="{{openid!=''}}">
+  <view class="toplogo">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="toptext">
+    <open-data type="userNickName" lang="zh_CN" class="user-name"></open-data>
+    <view class="user-name2">爱国、敬业、求实、创新</view>
+  </view>
+</view>
+<view class="topbanner" wx:if="{{openid==''}}">
+  <view class="topban1">您还未授权登录</view>
+  <view class="topban1">去授权登录</view>
+  <button bindtap="getopenid" type="default">登录</button>
+</view>
+
+<view class="banner-xx">
+  <view class="ban-list" id="{{openid}}" bindtap="getPersonalInfo">
+    <view class="ban-row">
+      <view class="ban-img">
+        <image src="../../images/mine/info.png"></image>
+      </view>
+      <view class="ban-text">个人资料</view>
+    </view>
+  </view>
+  <view class="ban-list" bindtap="help">
+    <view class="ban-row">
+      <view class="ban-img">
+        <image src="../../images/mine/help.png"></image>
+      </view>
+      <view class="ban-text">帮助中心</view>
+    </view>
+  </view>
+  <view class="ban-list" bindtap="feedback">
+    <view class="ban-row">
+      <view class="ban-img">
+        <image src="../../images/mine/advice.png"></image>
+      </view>
+      <view class="ban-text">意见反馈</view>
+    </view>
+  </view>
+  <view class="ban-list" bindtap="aboutUs">
+    <view class="ban-row">
+      <view class="ban-img">
+        <image src="../../images/mine/about.png"></image>
+      </view>
+      <view class="ban-text">关于我们&版本管理</view>
+    </view>
+  </view>
+  <view class="ban-list" bindtap="management">
+    <view class="ban-row">
+      <view class="ban-img">
+        <image src="../../images/mine/manager.png"></image>
+      </view>
+      <view class="ban-text">商家管理</view>
+    </view>
+  </view>
+</view>
