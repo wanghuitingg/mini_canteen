@@ -78,6 +78,13 @@
           "name": "",
           "pathName": "pages/personalInfo/personalInfo",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/method/method",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

@@ -1,18 +1,31 @@
 // pages/method/method.js
+wx.cloud.init({
+  env:"cloud1-3g8ktzem111ecee4",
+  traceUser:"true",
+})
+const db = wx.cloud.database();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    msgList:''
   },
-
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+  // 美食攻略列表
+    db.collection("methods").get({
+      success:(res)=>{
+        console.log(res);
+        this.setData({
+          msgList:res.data
+        })
+      }
+    })
   },
 
   /**

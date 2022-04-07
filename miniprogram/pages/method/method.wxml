@@ -1,2 +1,35 @@
 <!--pages/method/method.wxml-->
-<text>pages/method/method.wxml</text>
+<view class="banner">
+  <image src="../../images/banner.jpg"></image>
+</view>
+
+<view class="container">
+  <view class="container-title">
+    <view class="title-left">美食攻略</view>
+    <view class="title-right">发布</view>
+  </view>
+  <view class="main-box" wx:for="{{msgList}}" wx:key="{{item._id}}" id="{{item._id}}">
+    <view class="main-img">
+      <image src="{{item.photo}}"></image>
+    </view>
+    <view class="main-text">
+      <view class="main-title">{{item.title}}</view>
+      <!-- <view class="main-profile">{{item.profile}}</view> -->
+      <view class="main-user">
+        <view class="user-logo">
+          <image src="../../images/methods/user.png"></image>
+        </view>
+        <view class="user-name">{{item.author}}</view>
+        <view class="user-discuss">
+          <image src="../../images/methods/discuss.png"></image>
+        </view>
+        <view class="main-view">
+          <view class="view-img">
+            <image src="../../images/methods/view.png"></image>
+          </view>
+          <view class="view-num">{{item.view}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
