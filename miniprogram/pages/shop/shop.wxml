@@ -1,2 +1,12 @@
 <!--pages/shop/shop.wxml-->
 <text>pages/shop/shop.wxml</text>
+<!-- 顶部轮播图 -->
+<view class="banner">
+  <swiper class="swip_main" indicator-dots="true" autoplay interval="6000" circular>
+    <block wx:for="{{mgList}}">
+      <swiper-item>
+        <image src="{{item.photo}}" style="width: 100%;height: 100%;" mode="scaleToFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
